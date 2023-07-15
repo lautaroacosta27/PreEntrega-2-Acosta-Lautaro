@@ -138,10 +138,38 @@ header img {
     color: white;
     font-weight: 600;
 }
-
-.nav-link:hover {
+.botonera > ul > li:hover{
     background-color: rgb(141, 141, 141);
 }
+.dropdown-toggle{
+    color: white;
+    display: block;
+}
+.dropdown-toggle:hover{
+    background-color:rgb(141, 141, 141) ;
+    border-radius: 0%;
+
+}
+.dropdown-menu{
+    margin-top: 0%;
+    display: none;
+    list-style: none;
+    background-color: rgb(141, 141, 141);
+    border-radius: 0%;
+    text-align: center;
+}
+.dropdown-toggle:hover .dropdown-menu{
+    display: block;
+    background-color: rgb(141, 141, 141);
+    border: none;
+}
+
+.nav-link:hover {
+    background-color: rgb(141, 141, 141); 
+}
+
+
+
 
 /****** END NAV ******/
 
@@ -379,7 +407,14 @@ div figure button {
 
 /* FOOTER */
 @media (width < 768px) {
-
+    /* NAV */
+    .dropdown-toggle{
+        display: flex;
+    }
+    .dropdown-toggle{
+        padding: 0%;
+    }
+    /* END NAV */
     /* footer */
     footer {
         flex-direction: column;
